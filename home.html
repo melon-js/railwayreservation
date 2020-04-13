@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>Book your Train</title>
+
+    <link rel="stylesheet" href="style.css" >
+
+    <script>
+    function myfun()
+    {
+      alert("train is not found !");
+    }
+    </script>
+  <style>
+  body{
+    background-image: url("backg.png");
+    background-size:100% 100vh;
+    background-color:lightgrey;
+    background-repeat: no-repeat;
+  }
+  .book
+  {
+    position: relative;
+    float:left;
+    width: 35%;
+    height: 500px;
+
+
+  }
+  .book form
+  {
+    position: relative;
+    width: 100%;
+    height:500px;
+
+  }
+.book form  tr,td
+  {
+    padding: 10px;
+  }
+.book form  input
+  {
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+
+  }
+  .submit
+  {
+    width:400px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: orange;
+
+  }
+  .content
+  {
+    position: relative;
+    float: right;
+
+  }
+  h1,h3{
+    color:black;
+    opacity: .7;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <p class="logo"><img src="logo.png" width="140" height="50"></p>
+    <form action="" method="post">
+      <input  type="search" placeholder="search here..."> <button type="submit" >search</button>
+    </form>
+    <ul>
+     <a href="home.html"><li>home</li></a>
+       <a href="gallery.html"><li>gallery</li></a>
+        <a href="login.html"><li>sign-up</li></a>
+        <a href="login.html"><li>log-in</a><li></a>
+    </ul>
+  </div>
+  <div class="book">
+    <form onsubmit="myfun()">
+      <table>
+        <tr>
+          <td> <input type="text" required placeholder="from"> </td><td><input type="text" placeholder="to"> </td>
+          <tr>
+            <tr>
+              <td> <input required type="date" placeholder="mm/dd/yyyy"> </td><td><input type="date" placeholder="One way"> </td>
+              <tr>
+                <tr>
+                  <td> <input type="text"  placeholder="adult"> </td><td><input required type="text" placeholder="Kids"> </td>
+                  <tr>
+                    <tr>
+                    <td>  <input class="submit"  type="submit" value="search ticket"></td>
+                    </tr>
+      </table>
+    </form>
+  </div>
+  <div class="content">
+    <h1>WELCOME TO<BR>BOOK YOUR TRAIN
+    </h1>
+    <h3>We saves your time both while purchasing,<br>
+   the check-in and during the travel
+    </h3>
+  </div>
+</body>
+</html>
